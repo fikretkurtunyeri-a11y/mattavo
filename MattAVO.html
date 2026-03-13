@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="MattAVO">
 <title>MattAVO</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -28,6 +31,9 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   transition: background 1.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ===== STARFIELD ===== */
@@ -44,7 +50,7 @@ body {
 @keyframes floatPlanet { from{transform:translateY(0) rotate(0)} to{transform:translateY(-25px) rotate(6deg)} }
 
 /* ===== SCREENS ===== */
-.screen { position:relative; z-index:1; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; }
+.screen { position:relative; z-index:1; min-height:100vh; width:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; }
 .screen.hidden { display:none; }
 
 /* ===== WELCOME SCREEN ===== */
